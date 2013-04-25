@@ -137,6 +137,9 @@ var ProgressBar = (function ProgressBarClosure() {
     }
   };
 
+  
+
+ 
   return ProgressBar;
 })();
 
@@ -285,7 +288,11 @@ var PDFFindController = {
       'findhighlightallchange',
       'findcasesensitivitychange'
     ];
-
+  	$('#viewerContainer').attr('unselectable', 'on')
+	                 .css('user-select', 'none')
+	                 .on('selectstart', false);
+	 
+	
     this.handleEvent = this.handleEvent.bind(this);
 
     for (var i = 0; i < events.length; i++) {

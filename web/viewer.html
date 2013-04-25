@@ -19,7 +19,7 @@ limitations under the License.
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>PDF.js viewer</title>
-
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <!--#if FIREFOX || MOZCENTRAL-->
 <!--#include viewer-snippet-firefox-extension.html-->
 <!--#endif-->
@@ -38,6 +38,7 @@ limitations under the License.
 <!--#endif-->
 
 <!--#if !PRODUCTION-->
+	
     <script type="text/javascript" src="../src/network.js"></script>
     <script type="text/javascript" src="../src/chunked_stream.js"></script>
     <script type="text/javascript" src="../src/pdf_manager.js"></script>
